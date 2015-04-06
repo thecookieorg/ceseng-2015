@@ -1,4 +1,48 @@
 Rails.application.routes.draw do
+  get 'contact/index'
+
+  get 'ecoopera/index'
+
+  get 'news/index'
+
+  get 'portfolio/total_building_commissioning'
+
+  get 'portfolio/leed_commissioning'
+
+  get 'portfolio/existing_building_commissioning'
+
+  get 'portfolio/industrial_commissioning'
+
+  get 'portfolio/laboratory_containment_facility'
+
+  get 'portfolio/measurement_and_verification'
+
+  get 'portfolio/energy_analysis'
+
+  get 'services/building_commissioning'
+
+  get 'services/industrial_commissioning'
+
+  get 'services/measurement_and_verification'
+
+  get 'services/energy_performance'
+
+  get 'services/continuous_optimization'
+
+  get 'services/mep_design_services'
+
+  get 'services/sustainability_management'
+
+  get 'about/about_ces'
+
+  get 'about/the_ces_difference'
+
+  get 'about/people'
+
+  get 'about/testimonials'
+
+  root 'home#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
