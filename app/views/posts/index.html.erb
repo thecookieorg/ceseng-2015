@@ -9,14 +9,15 @@
     <% @posts.each do |post| %>
       <h3><%= post.title %><h3>
       <p><%= post.description %></p>
-      <%= link_to 'Show', post %>
-      <%= link_to 'Edit', edit_post_path(post) %>
-      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% if user_signed_in? %>
+        <div class="btn-group btn-group-sm">
+          <%= link_to 'Create News', new_post_path, class: "btn btn-success" %>
+          <%= link_to 'Edit', edit_post_path(post), class: "btn btn-warning" %>
+          <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+          <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "btn btn-info" %>
+        </div>
+      <% end %>
       <br>
     <% end %>
   </div>
 </div>
-
-<br>
-
-<%= link_to 'New Post', new_post_path %>
