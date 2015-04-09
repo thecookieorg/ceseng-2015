@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :posts
+
+  resources :news
+
   get 'contact/index'
 
   get 'ecoopera/index'

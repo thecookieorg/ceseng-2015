@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-md-3">
+    <%= render 'news/side_nav' %>
+  </div>
+  <div class="col-md-9">
+    <h1>News</h1>
+    <% @posts.each do |post| %>
+      <h3><%= post.title %><h3>
+      <p><%= post.description %></p>
+      <%= link_to 'Show', post %>
+      <%= link_to 'Edit', edit_post_path(post) %>
+      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <br>
+    <% end %>
+  </div>
+</div>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>
