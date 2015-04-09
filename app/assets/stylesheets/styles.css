@@ -1,1 +1,25 @@
-body { padding-top: 70px; }
+body { padding-top: 130px; }
+
+/*
+.margin-top{
+	margin-top: 77px;
+	margin-left: 100px !important;
+}
+*/
+
+.navbar-default {
+	border-top: 3px solid #8cc63f !important;
+	border-bottom: none !important;
+	/*background-color: white !important;*/
+}
+
+.nav-bkgd{
+   background: transparent url(<%= asset_path 'nav-bkgd.png' %>) no-repeat center center !important;
+   background-size:cover !important;
+   height: 88px !important;
+   /*margin: 0 6%;*/
+}
+
+.logo-size {
+	width: 100px;
+}

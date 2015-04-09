@@ -6,18 +6,16 @@ Rails.application.routes.draw do
   get 'news/index'
 
   get 'portfolio/total_building_commissioning'
-
   get 'portfolio/leed_commissioning'
-
   get 'portfolio/existing_building_commissioning'
-
   get 'portfolio/industrial_commissioning'
-
   get 'portfolio/laboratory_containment_facility'
-
   get 'portfolio/measurement_and_verification'
-
   get 'portfolio/energy_analysis'
+  get 'portfolio/vancouver_international_airport'
+  get 'portfolio/st_mary_hospital_existing_building'
+  get 'portfolio/woodward_hill_elementary_school'
+  get 'portfolio/national_research_centre'
 
   get 'services/building_commissioning'
 
