@@ -12,6 +12,7 @@
     <h1>News</h1>
     <% @posts.each do |post| %>
       <h3><%= post.title %></h3>
+      <%= image_tag post.image_url(:thumb) if post.image? %>
       <p><%= post.description %></p>
       <% if user_signed_in? %>
         <p style="font-size: 12px; color: grey;">Post created by: <%= current_user.email %></p>
