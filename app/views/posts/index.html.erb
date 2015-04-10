@@ -2,6 +2,10 @@
 
 <div class="row">
   <div class="col-md-3">
+    <% if user_signed_in? %>
+      <%= link_to 'Create News', new_post_path, class: "btn btn-success" %>
+      <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "btn btn-info" %>
+    <% end %>
     <%= render 'news/side_nav' %>
   </div>
   <div class="col-md-9">
@@ -10,11 +14,11 @@
       <h3><%= post.title %></h3>
       <p><%= post.description %></p>
       <% if user_signed_in? %>
+        <p style="font-size: 12px; color: grey;">Post created by: <%= current_user.email %></p>
+        <p style="font-size: 12px; color: grey;">Post published <%= time_ago_in_words(post.created_at) %> ago.</p>
         <div class="btn-group btn-group-sm">
-          <%= link_to 'Create News', new_post_path, class: "btn btn-success" %>
           <%= link_to 'Edit', edit_post_path(post), class: "btn btn-warning" %>
-          <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
-          <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "btn btn-info" %>
+          <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
         </div>
       <% end %>
       <br>
