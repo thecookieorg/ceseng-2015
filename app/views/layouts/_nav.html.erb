@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid nav-bkgd">
+  <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -10,11 +10,15 @@
       </button>
       <div class="logo-size">
         <%= link_to root_path, class: "navbar-brand" do %>
-          <%= image_tag 'logo-optimized.png', class: "img-responsive" %>
+          <%= image_tag 'logo-optimized.png', class: "logo-size img-responsive" %>
         <% end %>
       </div>
+      
+      
     </div>
-
+    <div class="nav-img-margin hidden-xs">
+      <%= image_tag 'nav-bkgd.png', class: "nav-image img-responsive", id: "border-nav-image" %>
+    </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse margin-top" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
