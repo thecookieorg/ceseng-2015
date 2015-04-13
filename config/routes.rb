@@ -21,6 +21,15 @@ Rails.application.routes.draw do
   get 'portfolio/st_mary_hospital_existing_building'
   get 'portfolio/woodward_hill_elementary_school'
   get 'portfolio/national_research_centre'
+  get 'portfolio/ubc_life_sciences_center'
+  get 'portfolio/electronic_arts_studio'
+  get 'portfolio/bc_hydro_office_towers'
+  get 'portfolio/district_educational_centre'
+  get 'portfolio/living_shangri_la'
+  get 'portfolio/telus_centre'
+  get 'portfolio/british_columbia_cancer_research_centre'
+  get 'portfolio/university_of_northern_british_columbia'
+  get 'portfolio/south_peace_community_multiplex'
 
   get 'services/building_commissioning'
 

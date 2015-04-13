@@ -1,4 +1,6 @@
-<h2>News</h2>
+<h4>Latest News</h4>
 <ul>
-	<li><%= link_to 'News Title', '#' %></li>
+	<% @posts.each do |post| %>
+		<li><p><%= post.title %></p></li>
+	<% end %>
 </ul>

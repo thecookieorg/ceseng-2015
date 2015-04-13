@@ -3,19 +3,19 @@
 <div class="row">
   <div class="col-md-3">
     <% if user_signed_in? %>
+      <p style="font-size: 12px; color: grey;">Welcome, <%= current_user.email %></p>
       <%= link_to 'Create News', new_post_path, class: "btn btn-success" %>
       <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "btn btn-info" %>
     <% end %>
-    <%= render 'news/side_nav' %>
+    <%= render 'posts/side_nav' %>
   </div>
   <div class="col-md-9">
     <h1>News</h1>
     <% @posts.each do |post| %>
       <h3><%= post.title %></h3>
-      <%= image_tag post.image_url(:thumb) if post.image? %>
-      <p><%= post.description %></p>
+      <%= image_tag post.image_url, class: "img-responsive" if post.image? %>
+      <p><br><%= post.description %></p>
       <% if user_signed_in? %>
-        <p style="font-size: 12px; color: grey;">Post created by: <%= current_user.email %></p>
         <p style="font-size: 12px; color: grey;">Post published <%= time_ago_in_words(post.created_at) %> ago.</p>
         <div class="btn-group btn-group-sm">
           <%= link_to 'Edit', edit_post_path(post), class: "btn btn-warning" %>

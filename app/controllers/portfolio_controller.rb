@@ -31,4 +31,19 @@ class PortfolioController < ApplicationController
 
   def national_research_centre
   end
+
+  def ubc_life_sciences_center
+  end
+
+  def electronic_arts_studio
+  end
+
+  def district_educational_centre
+  end
+
+  def living_shangri_la
+  end
+
+  def telus_centre
+  end
 end
