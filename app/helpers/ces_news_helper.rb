@@ -1,0 +1,2 @@
+module CesNewsHelper
+end

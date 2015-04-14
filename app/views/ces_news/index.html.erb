@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-3">
+    <% if user_signed_in? %>
+      <p style="font-size: 12px; color: grey;">Welcome, <%= current_user.email %></p>
+      <%= link_to 'Create News', new_ces_news_path, class: "btn btn-success" %>
+      <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "btn btn-info" %>
+    <% end %>
+    <%= render 'ces_news/side_nav' %>
+  </div>
+  <div class="col-md-9">
+    <h1>News</h1>
+    <% @ces_news.each do |ces_news| %>
+      <h3><%= ces_news.title %></h3>
+      <%= image_tag ces_news.image_url, class: "img-responsive" if ces_news.image? %>
+      <p><br><%= ces_news.description %></p>
+      <% if user_signed_in? %>
+        <p style="font-size: 12px; color: grey;">Post published <%= time_ago_in_words(ces_news.created_at) %> ago.</p>
+        <div class="btn-group btn-group-sm">
+          <%= link_to 'Edit', edit_ces_news_path(ces_news), class: "btn btn-warning" %>
+          <%= link_to 'Delete', ces_news, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+        </div>
+      <% end %>
+      <br>
+    <% end %>
+  </div>
+</div>

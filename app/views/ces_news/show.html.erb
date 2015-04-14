@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @ces_news.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @ces_news.description %>
+</p>
+
+<%= link_to 'Edit', edit_ces_news_path(@ces_news) %> |
+<%= link_to 'Back', ces_news_index_path %>

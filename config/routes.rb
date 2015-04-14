@@ -1,14 +1,12 @@
 Rails.application.routes.draw do
+  resources :ces_news
+
   devise_for :users
   resources :posts
-
-  resources :news
 
   get 'contact/index'
 
   get 'ecoopera/index'
-
-  get 'news/index'
 
   get 'portfolio/total_building_commissioning'
   get 'portfolio/leed_commissioning'
@@ -30,6 +28,22 @@ Rails.application.routes.draw do
   get 'portfolio/british_columbia_cancer_research_centre'
   get 'portfolio/university_of_northern_british_columbia'
   get 'portfolio/south_peace_community_multiplex'
+  get 'portfolio/bioenergy_gasification_heating_plant'
+  get 'portfolio/biomass_fueled_combined_heat_and_power'
+  get 'portfolio/continuous_effluent_decontamination'
+  get 'portfolio/decontamination_chamber'
+  get 'portfolio/ubc_life_sciences_center_laboratory'
+  get 'portfolio/sfu_blusson_hall_laboratory'
+  get 'portfolio/bc_cancer_research_laboratory_containment'
+  get 'portfolio/bc_center_for_disease_control'
+  get 'portfolio/centre_of_excellence_for_clean_energy'
+  get 'portfolio/st_mary_hospital_expansion'
+  get 'portfolio/abbotsford_collegiate_school'
+  get 'portfolio/carson_graham_secondary_school'
+  get 'portfolio/hot_water_boiler_plant_optimization'
+  get 'portfolio/richmond_lexus_dealership'
+  get 'portfolio/tsawwassen_spring_apartment_building'
+  get 'portfolio/west_pender_social_housing'
 
   get 'services/building_commissioning'
 
