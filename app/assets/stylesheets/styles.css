@@ -16,6 +16,11 @@ h1, h2, h3 {
 }
 */
 
+.page_title {
+	border-top: 2px solid #ccc; 
+	color: #ccc;
+}
+
 .navbar-default {
 	border-top: 3px solid #8cc63f !important;
 	border-bottom: none !important;

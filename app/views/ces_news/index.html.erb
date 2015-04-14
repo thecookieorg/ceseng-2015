@@ -8,7 +8,7 @@
     <%= render 'ces_news/side_nav' %>
   </div>
   <div class="col-md-9">
-    <h1><%= content_for(:title, "News") %> News</h1>
+    <h1 class="page_title"><%= content_for(:title, "News") %> News</h1>
     <% @ces_news.each do |ces_news| %>
       <h3><%= ces_news.title %></h3>
       <%= image_tag ces_news.image_url, class: "img-responsive" if ces_news.image? %>
