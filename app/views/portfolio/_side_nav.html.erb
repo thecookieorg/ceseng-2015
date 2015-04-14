@@ -1,10 +1,140 @@
-<h2>Portfolio</h2>
-<ul>
-	<li><%= link_to 'Total Building Commissioning', portfolio_total_building_commissioning_path %></li>
-	<li><%= link_to 'LEED Commissioning', portfolio_leed_commissioning_path %></li>
-	<li><%= link_to 'Existing Building Commissioning', portfolio_existing_building_commissioning_path %></li>
-	<li><%= link_to 'Industrial Commissioning', portfolio_industrial_commissioning_path %></li>
-	<li><%= link_to 'Laboratory Containment', portfolio_laboratory_containment_facility_path %></li>
-	<li><%= link_to 'Measurement and Verification', portfolio_measurement_and_verification_path %></li>
-	<li><%= link_to 'Energy Analysis', portfolio_energy_analysis_path %></li>
-</ul>
+<h3 style="color: #928F90;">Portfolio</h3>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Total Building Commissioning
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+        	<li><%= link_to 'Vancouver International Airport', portfolio_vancouver_international_airport_path %></li>
+        	<li><%= link_to 'St Mary Hospital Expansion Building', portfolio_st_mary_hospital_expansion_path %></li>
+        	<li><%= link_to 'Woodward Hill Elementary School', portfolio_woodward_hill_elementary_school_path %></li>
+        	<li><%= link_to 'National Research Centre', portfolio_national_research_centre_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          LEED Commissioning
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+        	<li><%= link_to 'University of British Columbia', portfolio_ubc_life_sciences_center_path %></li>
+        	<li><%= link_to 'Electronic Arts Studio', portfolio_electronic_arts_studio_path %></li>
+        	<li><%= link_to 'BC Hydro Office Towers Renovations', portfolio_bc_hydro_office_towers_path %></li>
+        	<li><%= link_to 'District Educational Centre', portfolio_district_educational_centre_path %></li>
+        	<li><%= link_to 'Living Shangri-La', portfolio_living_shangri_la_path %></li>
+        	<li><%= link_to 'Telus Centre', portfolio_telus_centre_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Existing Building Commissioning
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingthree">
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+        	<li><%= link_to 'British Columbia Cancer Research Centre', portfolio_british_columbia_cancer_research_centre_path %></li>
+        	<li><%= link_to 'St. Mary\'s Hospital Existing Building', portfolio_st_mary_hospital_existing_building_path %></li>
+        	<li><%= link_to 'University of Northern British Columbia', portfolio_university_of_northern_british_columbia_path %></li>
+        	<li><%= link_to 'South Peace Community Multiplex', portfolio_south_peace_community_multiplex_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Industrial Commissioning
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+          <li><%= link_to 'Bioenergy Gasification Heating Plant', portfolio_bioenergy_gasification_heating_plant_path %></li>
+          <li><%= link_to 'Biomass Fueled Combined Heat and Power Plant', portfolio_biomass_fueled_combined_heat_and_power_path %></li>
+          <li><%= link_to 'Continuous Effluent Decontamination', portfolio_continuous_effluent_decontamination_path %></li>
+          <li><%= link_to 'Decontamination Chamber', portfolio_decontamination_chamber_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Laboratory Containment
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+        	<li><%= link_to 'University of British Columbia', portfolio_ubc_life_sciences_center_laboratory_path %></li>
+        	<li><%= link_to 'Simon Fraser University', portfolio_sfu_blusson_hall_laboratory_path %></li>
+        	<li><%= link_to 'BC Cancer Research Centre', portfolio_bc_cancer_research_laboratory_containment_path %></li>
+        	<li><%= link_to 'BC Center for Disease Control', portfolio_bc_center_for_disease_control_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingSix">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Measurement and Verification
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+        	<li><%= link_to 'Centre of Excellence for Clean Energy Technology', portfolio_centre_of_excellence_for_clean_energy_path %></li>
+        	<li><%= link_to 'St. Mary Hospital Expansion', portfolio_st_mary_hospital_expansion_path %></li>
+        	<li><%= link_to 'Abbotsford Collegiate School', portfolio_abbotsford_collegiate_school_path %></li>
+        	<li><%= link_to 'Carson Graham Secondary School', portfolio_carson_graham_secondary_school_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingSeven">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Energy Analysis
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+        	<li><%= link_to 'St Mary Hospital Existing Building', portfolio_st_mary_hospital_existing_building_path %></li>
+        	<li><%= link_to 'Hot Water Boiler Plant Optimization', portfolio_hot_water_boiler_plant_optimization_path %></li>
+        	<li><%= link_to 'BC Cancer Research Centre', portfolio_british_columbia_cancer_research_centre_path %></li>
+        	<li><%= link_to 'Richmond Lexus Dealership', portfolio_richmond_lexus_dealership_path %></li>
+        	<li><%= link_to 'Tsawwassen Spring Apartment Building Complex', portfolio_tsawwassen_spring_apartment_building_path %></li>
+        	<li><%= link_to '337 West Pender Social Housing Residential Tower', portfolio_west_pender_social_housing_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
