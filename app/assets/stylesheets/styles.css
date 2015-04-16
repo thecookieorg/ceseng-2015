@@ -9,12 +9,6 @@ h1, h2, h3, h4, h5, h6, p {
 h1, h2, h3 {
 	color: #928F90 !important;
 }
-/*
-.margin-top{
-	margin-top: 77px;
-	margin-left: 100px !important;
-}
-*/
 
 .page_title {
 	border-top: 2px solid #ccc; 
@@ -28,14 +22,14 @@ h1, h2, h3 {
 }
 
 .nav-header{
-   background: transparent url(<%= asset_path 'nav-bkgd.png' %>) no-repeat center center !important;
-   background-size:cover !important;
-   height: 88px !important;
-   z-index: -2;
+ 	background: transparent url(<%= asset_path 'nav-bkgd.png' %>) no-repeat center center !important;
+ 	background-size: cover !important;
+ 	height: 88px !important;
+ 	z-index: -2;
 	float: right !important;
 	position: relative !important;
 	margin-left: 382px !important;
-   margin: 6%;
+	margin: 6%;
 }
 
 .nav-img-margin {
@@ -52,7 +46,7 @@ h1, h2, h3 {
 
 /* PANEL SIDE NAV */
 .panel-ces {
-	background-image: white;
+	background-color: white;
 }
 
 .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group  {
