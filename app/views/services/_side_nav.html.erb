@@ -11,11 +11,11 @@
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
         <ul class="side-nav-ces">
-        	<li><%= link_to 'Total Building Commissioning', '#' %></li>
-        	<li><%= link_to 'LEED Commissioning', '#' %></li>
-        	<li><%= link_to 'Existing Building Commissioning', '#' %></li>
-        	<li><%= link_to 'Testing and Balancing', '#' %></li>
-        	<li><%= link_to 'System Manuals', '#' %></li>
+        	<li><%= link_to 'Total Building Commissioning', services_total_building_commissioning_path %></li>
+        	<li><%= link_to 'LEED Commissioning', services_leed_commissioning_path %></li>
+        	<li><%= link_to 'Existing Building Commissioning', services_existing_building_commissioning_path %></li>
+        	<li><%= link_to 'Testing and Balancing', services_testing_and_balancing_path %></li>
+        	<li><%= link_to 'System Manuals', services_system_manuals_path %></li>
         </ul>
       </div>
     </div>
@@ -31,10 +31,10 @@
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
         <ul class="side-nav-ces">
-        	<li><%= link_to 'Heat and Power Plant (UBC and UNBC)', '#' %></li>
-        	<li><%= link_to 'Laboratory High Containment Facilities', '#' %></li>
-        	<li><%= link_to 'High Voltage Substations', '#' %></li>
-        	<li><%= link_to 'Decon Chambers', '#' %></li>
+        	<li><%= link_to 'Heat and Power Plant (UBC and UNBC)', services_heat_and_power_plant_path %></li>
+        	<li><%= link_to 'Laboratory High Containment Facilities', services_laboratory_high_containment_facilities_path %></li>
+        	<li><%= link_to 'High Voltage Substations', services_high_voltage_substations_path %></li>
+        	<li><%= link_to 'Decon Chambers', services_decon_chambers_path %></li>
         </ul>
       </div>
     </div>
@@ -50,9 +50,9 @@
     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       <div class="panel-body">
         <ul class="side-nav-ces">
-        	<li><%= link_to 'Retrofit M&V - IPMVP Option B', '#' %></li>
-        	<li><%= link_to 'Whole Building - IPMVP Option C', '#' %></li>
-        	<li><%= link_to 'Whole Building Simulated Calibration - Option D', '#' %></li>
+        	<li><%= link_to 'Retrofit M&V - IPMVP Option B', services_retrofit_m_and_v_option_b_path %></li>
+        	<li><%= link_to 'Whole Building - IPMVP Option C', services_whole_building_option_c_path %></li>
+        	<li><%= link_to 'Whole Building Simulated Calibration - Option D', services_whole_building_path %></li>
         </ul>
       </div>
     </div>
@@ -68,11 +68,11 @@
     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
       <div class="panel-body">
         <ul class="side-nav-ces">
-        	<li><%= link_to 'Incentive Management', '#' %></li>
-        	<li><%= link_to 'Energy Studies', '#' %></li>
-        	<li><%= link_to 'Building Energy Simulation', '#' %></li>
-        	<li><%= link_to 'Inverse Modelling and Performance Benchmarking', '#' %></li>
-        	<li><%= link_to 'Real versus Estimated Energy Consumption', '#' %></li>
+        	<li><%= link_to 'Incentive Management', services_incentive_management_path %></li>
+        	<li><%= link_to 'Energy Studies', services_energy_studies_path %></li>
+        	<li><%= link_to 'Building Energy Simulation', services_building_energy_simulation_path %></li>
+        	<li><%= link_to 'Inverse Modelling and Performance Benchmarking', services_inverse_modeling_path %></li>
+        	<li><%= link_to 'Real versus Estimated Energy Consumption', services_real_vs_estimated_energy_path %></li>
         </ul>
       </div>
     </div>
@@ -88,8 +88,8 @@
     <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
       <div class="panel-body">
         <ul class="side-nav-ces">
-        	<li><%= link_to 'Continuous Optimization', '#' %></li>
-        	<li><%= link_to 'Monitoring Based Commissioning', '#' %></li>
+        	<li><%= link_to 'Continuous Optimization', services_continuous_optimization_inner_path %></li>
+        	<li><%= link_to 'Monitoring Based Commissioning', services_monitoring_based_commissioning_path %></li>
         </ul>
       </div>
     </div>
@@ -105,9 +105,9 @@
     <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
       <div class="panel-body">
         <ul class="side-nav-ces">
-        	<li><%= link_to 'Retrofit Design', '#' %></li>
-        	<li><%= link_to 'New Construction Design', '#' %></li>
-        	<li><%= link_to 'Design Build Projects', '#' %></li>
+        	<li><%= link_to 'Retrofit Design', services_retrofit_design_path %></li>
+        	<li><%= link_to 'New Construction Design', services_new_constriction_design_path %></li>
+        	<li><%= link_to 'Design Build Projects', services_design_build_projects_path %></li>
         </ul>
       </div>
     </div>
@@ -123,22 +123,12 @@
     <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
       <div class="panel-body">
         <ul class="side-nav-ces">
-        	<li><%= link_to 'BOMA BESt Certification', '#' %></li>
-        	<li><%= link_to 'LEED Certification', '#' %></li>
-        	<li><%= link_to 'Policies Management', '#' %></li>
-        	<li><%= link_to 'Behavior Changes', '#' %></li>
+        	<li><%= link_to 'BOMA BESt Certification', services_boma_best_certification_path %></li>
+        	<li><%= link_to 'LEED Certification', services_leed_certification_path %></li>
+        	<li><%= link_to 'Policies Management', services_policies_management_path %></li>
+        	<li><%= link_to 'Behavior Changes', services_behavior_changes_path %></li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-
-<ul>
-	<li><%= link_to 'Building Commissioning', services_building_commissioning_path %></li>
-	<li><%= link_to 'Industrial Commissioning', services_industrial_commissioning_path %></li>
-	<li><%= link_to 'Measurement and Verification', services_measurement_and_verification_path %></li>
-	<li><%= link_to 'Energy Performance', services_energy_performance_path %></li>
-	<li><%= link_to 'Continuous Optimization', services_continuous_optimization_path %></li>
-	<li><%= link_to 'MEP Design Services', services_mep_design_services_path %></li>
-	<li><%= link_to 'Sustainability Management', services_sustainability_management_path %></li>
-</ul>

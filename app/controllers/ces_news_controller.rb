@@ -5,7 +5,7 @@ class CesNewsController < ApplicationController
   # GET /ces_news
   # GET /ces_news.json
   def index
-    @ces_news = CesNews.all
+    @ces_news = CesNews.all.order("created_at DESC")
   end
 
   # GET /ces_news/1
@@ -26,6 +26,7 @@ class CesNewsController < ApplicationController
   # POST /ces_news.json
   def create
     @ces_news = CesNews.new(ces_news_params)
+    @post.user_id = current_user.id
 
     respond_to do |format|
       if @ces_news.save
