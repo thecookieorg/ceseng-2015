@@ -82,3 +82,17 @@ a:hover {
 li.active a {
 	color: #8cc63f !important;
 }
+
+
+
+.nav .navbar-nav .navbar-right > li > a:hover, .nav .navbar-nav .navbar-right > li > a:focus, li.dropdown .dropdown-menu a:hover, li.dropdown .dropdown-menu a:focus {
+	background-color: #8cc63f !important;
+	color: white !important;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color: #8cc63f !important;
+	color: white !important;
+}
+
+
