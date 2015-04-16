@@ -78,3 +78,7 @@ ul.side-nav-ces li a:hover {
 a:hover {
 	text-decoration: none !important;
 }
+
+li.active a {
+	color: #8cc63f !important;
+}
