@@ -26,7 +26,7 @@ class CesNewsController < ApplicationController
   # POST /ces_news.json
   def create
     @ces_news = CesNews.new(ces_news_params)
-    @post.user_id = current_user.id
+    @ces_news.user_id = current_user.id
 
     respond_to do |format|
       if @ces_news.save
