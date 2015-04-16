@@ -22,7 +22,7 @@ h1, h2, h3 {
 }
 
 .nav-header{
- 	background: transparent url(<%= asset_path 'nav-bkgd.png' %>) no-repeat center center !important;
+ 	background: transparent url('images/nav-bkgd.png') no-repeat center center !important;
  	background-size: cover !important;
  	height: 88px !important;
  	z-index: -2;
