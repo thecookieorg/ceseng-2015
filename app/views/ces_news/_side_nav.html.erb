@@ -1,6 +1,20 @@
-<h4>Latest News</h4>
-<ul>
-	<% @ces_news.each do |ces_news| %>
-		<li><p><%= ces_news.title %></p></li>
-	<% end %>
-</ul>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+    		Latest News
+      </h4>
+    </div>
+
+      <div class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+          	<% @ces_news.each do |ces_news| %>
+				<li><%= ces_news.title %></li>
+			<% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

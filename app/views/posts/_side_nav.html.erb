@@ -1,6 +1,20 @@
-<h4>Latest Posts</h4>
-<ul>
-	<% @posts.each do |post| %>
-		<li><p><%= post.title %></p></li>
-	<% end %>
-</ul>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+    		Latest Posts
+      </h4>
+    </div>
+
+      <div class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+          	<% @posts.each do |post| %>
+				<li><%= post.title %></li>
+			<% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
