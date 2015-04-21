@@ -1,7 +1,36 @@
-<h2>About CES</h2>
-<ul>
-	<li><%= link_to 'About CES', about_about_ces_path %></li>
-	<li><%= link_to 'The CES Difference', about_the_ces_difference_path %></li>
-	<li><%= link_to 'People', about_people_path %></li>
-	<li><%= link_to 'Testimonials', about_testimonials_path %></li>
-</ul>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          About CES
+        </a>
+      </h4>
+    </div>
+
+
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+          <% if current_page?('/about/about_ces') %>
+            <li class="active"><%= link_to 'About CES', about_about_ces_path %></li>
+          <% else %>
+            <li><%= link_to 'About CES', about_about_ces_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/the_ces_difference') %>
+            <li class="active"><%= link_to 'The CES Difference', about_the_ces_difference_path %></li>
+          <% else %>
+            <li><%= link_to 'The CES Difference', about_the_ces_difference_path %></li>
+          <% end %>
+
+          <li><%= link_to 'People', about_boban_ratkovich_path %></li>
+
+          <% if current_page?('/about/testimonials') %>
+          	<li class="active"><%= link_to 'Testimonials', about_testimonials_path %></li>
+          <% else %>
+          	<li><%= link_to 'Testimonials', about_testimonials_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>

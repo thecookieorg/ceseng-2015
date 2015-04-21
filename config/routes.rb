@@ -84,15 +84,30 @@ Rails.application.routes.draw do
   get 'services/behavior_changes'
 
 
-
-
   get 'about/about_ces'
-
   get 'about/the_ces_difference'
-
   get 'about/people'
-
   get 'about/testimonials'
+  get 'about/boban_ratkovich'
+  get 'about/risto_basic'
+  get 'about/slobodan_vukadinov'
+  get 'about/brett_crawford'
+  get 'about/kyle_bigourdin'
+  get 'about/steven_quan'
+  get 'about/bojan_ivankovic'
+  get 'about/homayoun_khatami'
+  get 'about/daniel_alfonso_ponte'
+  get 'about/johnson_shen'
+  get 'about/robin_donovan'
+  get 'about/marko_manojlovic'
+  get 'about/aleksandar_visnjic'
+  get 'about/laurence_kao'
+  get 'about/drasko_rapaic'
+  get 'about/roy_xu'
+  get 'about/mitchell_leckner'
+  get 'about/gilles_provencher'
+  get 'about/ali_safi'
+
 
   root 'home#index'
 

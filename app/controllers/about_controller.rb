@@ -10,4 +10,5 @@ class AboutController < ApplicationController
 
   def testimonials
   end
+
 end

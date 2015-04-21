@@ -1,18 +1,16 @@
 <%= content_for(:title, "CES Blog") %>
 
-<p id="notice"><%= notice %></p>
-
 <div class="row">
   <div class="col-md-3">
     <% if user_signed_in? %>
       <p style="font-size: 12px; color: grey;">Welcome, <%= current_user.email %></p>
-      <%= link_to 'Create Blog Post', new_post_path, class: "btn btn-success" %>
+      <%= link_to 'Create News', new_post_path, class: "btn btn-success" %>
       <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "btn btn-info" %>
     <% end %>
     <%= render 'posts/side_nav' %>
   </div>
   <div class="col-md-9">
-    <h1 class="page_title">Blog</h1>
+    <h1 class="page_title">News</h1>
     <% @posts.each do |post| %>
       <h3><%= post.title %></h3>
       <%= image_tag post.image_url, class: "img-responsive" if post.image? %>

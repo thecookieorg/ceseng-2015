@@ -1,0 +1,187 @@
+<h3 style="color: #928F90;">People</h3>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Management
+        </a>
+      </h4>
+    </div>
+
+    <% if current_page?('/about/boban_ratkovich') || current_page?('/about/risto_basic') || current_page?('/about/slobodan_vukadinov') %>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+    <% else %>
+      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <% end %>
+
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+          <% if current_page?('/about/boban_ratkovich') %>
+            <li class="active"><%= link_to 'Boban Ratkovich', about_boban_ratkovich_path %></li>
+          <% else %>
+            <li><%= link_to 'Boban Ratkovich', about_boban_ratkovich_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/risto_basic') %>
+            <li class="active"><%= link_to 'Risto Basic', about_risto_basic_path %></li>
+          <% else %>
+            <li><%= link_to 'Risto Basic', about_risto_basic_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/slobodan_vukadinov') %>
+            <li class="active"><%= link_to 'Slobodan Vukadinov', about_slobodan_vukadinov_path %></li>
+          <% else %>
+            <li><%= link_to 'Slobodan Vukadinov', about_slobodan_vukadinov_path %></li>
+          <% end %>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Associates
+        </a>
+      </h4>
+    </div>
+
+    <% if current_page?('/about/brett_crawford') || current_page?('/about/kyle_bigourdin') %>
+        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+    <% else %>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+    <% end %>
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+
+          <% if current_page?('/about/brett_crawford') %>
+            <li class="active"><%= link_to 'Brett Crawford', about_brett_crawford_path %></li>
+          <% else %>
+            <li><%= link_to 'Brett Crawford', about_brett_crawford_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/kyle_bigourdin') %>
+            <li class="active"><%= link_to 'Kyle Bigourdin', about_kyle_bigourdin_path %></li>
+          <% else %>
+            <li><%= link_to 'Kyle Bigourdin', about_kyle_bigourdin_path %></li>
+          <% end %>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Engineering Team
+        </a>
+      </h4>
+    </div>
+
+    <% if current_page?('/about/steven_quan') || current_page?('/about/bojan_ivankovic') || current_page?('/about/homayoun_khatami') || current_page?('/about/daniel_alfonso_ponte') || current_page?('/about/johnson_shen') || current_page?('/about/robin_donovan') || current_page?('/about/marko_manojlovic') || current_page?('/about/aleksandar_visnjic') || current_page?('/about/laurence_kao') || current_page?('/about/drasko_rapaic') || current_page?('/about/roy_xu') || current_page?('/about/mitchell_leckner') || current_page?('/about/gilles_provencher') || current_page?('/about/ali_safi') %>
+      <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+    <% else %>
+      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+    <% end %>
+
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+
+          <% if current_page?('/about/steven_quan') %>
+            <li class="active"><%= link_to 'Steven Quan', about_steven_quan_path %></li>
+          <% else %>
+            <li><%= link_to 'Steven Quan', about_steven_quan_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/bojan_ivankovic') %>
+            <li class="active"><%= link_to 'Bojan Ivankovic', about_bojan_ivankovic_path %></li>
+          <% else %>
+            <li><%= link_to 'Bojan Ivankovic', about_bojan_ivankovic_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/homayoun_khatami') %>
+            <li class="active"><%= link_to 'Homayoun Khatami', about_homayoun_khatami_path %></li>
+          <% else %>
+            <li><%= link_to 'Homayoun Khatami', about_homayoun_khatami_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/daniel_alfonso_ponte') %>
+            <li class="active"><%= link_to 'Daniel Alfonso Ponte', about_daniel_alfonso_ponte_path %></li>
+          <% else %>
+            <li><%= link_to 'Daniel Alfonso Ponte', about_daniel_alfonso_ponte_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/johnson_shen') %>
+            <li class="active"><%= link_to 'Johnson Shen', about_johnson_shen_path %></li>
+          <% else %>
+            <li><%= link_to 'Johnson Shen', about_johnson_shen_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/robin_donovan') %>
+            <li class="active"><%= link_to 'Robin Donovan', about_robin_donovan_path %></li>
+          <% else %>
+            <li><%= link_to 'Robin Donovan', about_robin_donovan_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/marko_manojlovic') %>
+            <li class="active"><%= link_to 'Marko Manojlovic', about_marko_manojlovic_path %></li>
+          <% else %>
+            <li><%= link_to 'Marko Manojlovic', about_marko_manojlovic_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/aleksandar_visnjic') %>
+            <li class="active"><%= link_to 'Aleksandar Visnjic', about_aleksandar_visnjic_path %></li>
+          <% else %>
+            <li><%= link_to 'Aleksandar Visnjic', about_aleksandar_visnjic_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/laurence_kao') %>
+            <li class="active"><%= link_to 'Laurence Kao', about_laurence_kao_path %></li>
+          <% else %>
+            <li><%= link_to 'Laurence Kao', about_laurence_kao_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/drasko_rapaic') %>
+            <li class="active"><%= link_to 'Drasko Rapaic', about_drasko_rapaic_path %></li>
+          <% else %>
+            <li><%= link_to 'Drasko Rapaic', about_drasko_rapaic_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/roy_xu') %>
+            <li class="active"><%= link_to 'Roy Xu', about_roy_xu_path %></li>
+          <% else %>
+            <li><%= link_to 'Roy Xu', about_roy_xu_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/mitchell_leckner') %>
+            <li class="active"><%= link_to 'Mitchell Leckner', about_mitchell_leckner_path %></li>
+          <% else %>
+            <li><%= link_to 'Mitchell Leckner', about_mitchell_leckner_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/gilles_provencher') %>
+            <li class="active"><%= link_to 'Gilles Provencher', about_gilles_provencher_path %></li>
+          <% else %>
+            <li><%= link_to 'Gilles Provencher', about_gilles_provencher_path %></li>
+          <% end %>
+
+          <% if current_page?('/about/ali_safi') %>
+            <li class="active"><%= link_to 'Ali Safi', about_ali_safi_path %></li>
+          <% else %>
+            <li><%= link_to 'Ali Safi', about_ali_safi_path %></li>
+          <% end %>
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+  </div>
