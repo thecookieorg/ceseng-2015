@@ -112,7 +112,7 @@
       </h4>
     </div>
     
-    <% if current_page?('/fr/portfolio/existing_building_commissioning') || current_page?('/fr/portfolio/british_columbia_cancer_research_centre') || current_page?('/fr/portfolio/st_mary_hospital_existing_building') || current_page?('/fr/portfolio/university_of_northern_british_columbia') || current_page?('/fr/portfolio/south_peace_community_multiplex') %>
+    <% if current_page?('/fr/portfolio/existing_building_commissioning') || current_page?('/fr/portfolio/bc_cancer_research_centre') || current_page?('/fr/portfolio/st_mary_hospital_existing_building') || current_page?('/fr/portfolio/unbc') || current_page?('/fr/portfolio/south_peace_community_multiplex') %>
       <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingthree">
     <% else %>
       <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingthree">
@@ -121,10 +121,10 @@
       <div class="panel-body">
         <ul class="side-nav-ces">
 
-          <% if current_page?('/fr/portfolio/british_columbia_cancer_research_centre') %>
-            <li class="active"><%= link_to 'British Columbia Cancer Research Centre', portfolio_british_columbia_cancer_research_centre_path %></li>
+          <% if current_page?('/fr/portfolio/bc_cancer_research_centre') %>
+            <li class="active"><%= link_to 'British Columbia Cancer Research Centre', portfolio_bc_cancer_research_centre_path %></li>
           <% else %>
-            <li><%= link_to 'British Columbia Cancer Research Centre', portfolio_british_columbia_cancer_research_centre_path %></li>
+            <li><%= link_to 'British Columbia Cancer Research Centre', portfolio_bc_cancer_research_centre_path %></li>
           <% end %>
         	
           <% if current_page?('/fr/portfolio/st_mary_hospital_existing_building') %>
@@ -133,10 +133,10 @@
             <li><%= link_to 'St. Mary\'s Hospital Existing Building', portfolio_st_mary_hospital_existing_building_path %></li>
           <% end %>
 
-          <% if current_page?('/fr/portfolio/university_of_northern_british_columbia') %>
-            <li class="active"><%= link_to 'University of Northern British Columbia', portfolio_university_of_northern_british_columbia_path %></li>
+          <% if current_page?('/fr/portfolio/unbc') %>
+            <li class="active"><%= link_to 'University of Northern British Columbia', portfolio_unbc_path %></li>
           <% else %>
-            <li><%= link_to 'University of Northern British Columbia', portfolio_university_of_northern_british_columbia_path %></li>
+            <li><%= link_to 'University of Northern British Columbia', portfolio_unbc_path %></li>
           <% end %>
         	
           <% if current_page?('/fr/portfolio/south_peace_community_multiplex') %>
@@ -205,7 +205,7 @@
       </h4>
     </div>
 
-    <% if current_page?('/fr/portfolio/laboratory_containment_facility') || current_page?('/fr/portfolio/ubc_life_sciences_center_laboratory') || current_page?('/fr/portfolio/sfu_blusson_hall_laboratory') || current_page?('/fr/portfolio/bc_cancer_research_laboratory_containment') || current_page?('/fr/portfolio/bc_center_for_disease_control') %>
+    <% if current_page?('/fr/portfolio/laboratory_containment_facility') || current_page?('/fr/portfolio/ubc_life_sciences_center_laboratory') || current_page?('/fr/portfolio/sfu_blusson_hall_laboratory') || current_page?('/fr/portfolio/bc_cancer_research_lcontainment') || current_page?('/fr/portfolio/bc_center_for_disease_control') %>
       <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
     <% else %>
       <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
@@ -226,10 +226,10 @@
             <li><%= link_to 'Simon Fraser University', portfolio_sfu_blusson_hall_laboratory_path %></li>
           <% end %>
 
-          <% if current_page?('/fr/portfolio/bc_cancer_research_laboratory_containment') %>
-            <li class="active"><%= link_to 'BC Cancer Research Centre', portfolio_bc_cancer_research_laboratory_containment_path %></li>
+          <% if current_page?('/fr/portfolio/bc_cancer_research_lcontainment') %>
+            <li class="active"><%= link_to 'BC Cancer Research Centre', portfolio_bc_cancer_research_lcontainment_path %></li>
           <% else %>
-            <li><%= link_to 'BC Cancer Research Centre', portfolio_bc_cancer_research_laboratory_containment_path %></li>
+            <li><%= link_to 'BC Cancer Research Centre', portfolio_bc_cancer_research_lcontainment_path %></li>
           <% end %>
 
           <% if current_page?('/fr/portfolio/bc_center_for_disease_control') %>
@@ -299,7 +299,7 @@
       </h4>
     </div>
     
-    <% if current_page?('/fr/portfolio/energy_analysis') || current_page?('/fr/portfolio/st_mary_hospital_existing_building_2') || current_page?('/fr/portfolio/hot_water_boiler_plant_optimization') || current_page?('/fr/portfolio/british_columbia_cancer_research_centre_2') || current_page?('/fr/portfolio/richmond_lexus_dealership') || current_page?('/fr/portfolio/tsawwassen_spring_apartment_building') || current_page?('/fr/portfolio/west_pender_social_housing') %>
+    <% if current_page?('/fr/portfolio/energy_analysis') || current_page?('/fr/portfolio/st_mary_hospital_existing_building_2') || current_page?('/fr/portfolio/hot_water_boiler_plant_optimization') || current_page?('/fr/portfolio/bc_cancer_research_centre_2') || current_page?('/fr/portfolio/richmond_lexus_dealership') || current_page?('/fr/portfolio/tsawwassen_spring_apartment_building') || current_page?('/fr/portfolio/west_pender_social_housing') %>
       <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSeven">
     <% else %>
       <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
@@ -319,10 +319,10 @@
             <li><%= link_to 'Hot Water Boiler Plant Optimization', portfolio_hot_water_boiler_plant_optimization_path %></li>
           <% end %>
 
-          <% if current_page?('/fr/portfolio/british_columbia_cancer_research_centre_2') %>
-            <li class="active"><%= link_to 'BC Cancer Research Centre', portfolio_british_columbia_cancer_research_centre_2_path %></li>
+          <% if current_page?('/fr/portfolio/bc_cancer_research_centre_2') %>
+            <li class="active"><%= link_to 'BC Cancer Research Centre', portfolio_bc_cancer_research_centre_2_path %></li>
           <% else %>
-            <li><%= link_to 'BC Cancer Research Centre', portfolio_british_columbia_cancer_research_centre_2_path %></li>
+            <li><%= link_to 'BC Cancer Research Centre', portfolio_bc_cancer_research_centre_2_path %></li>
           <% end %>
 
           <% if current_page?('/fr/portfolio/richmond_lexus_dealership') %>
