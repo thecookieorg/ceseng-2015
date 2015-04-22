@@ -1,12 +1,18 @@
 Rails.application.routes.draw do
   
+  scope "(:locale)", :locale => /en|fr/ do
+    root :to => 'home#index'
+    get "home/index"
+    get 'about/about_ces'
+    get 'contact/index'
+  end  
 
   resources :ces_news
 
   devise_for :users
   resources :posts
 
-  get 'contact/index'
+  
 
   get 'ecoopera/index'
 
@@ -86,7 +92,6 @@ Rails.application.routes.draw do
   get 'services/behavior_changes'
 
 
-  get 'about/about_ces'
   get 'about/the_ces_difference'
   get 'about/people'
   get 'about/testimonials'
@@ -111,7 +116,7 @@ Rails.application.routes.draw do
   get 'about/ali_safi'
 
 
-  root 'home#index'
+  # root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
