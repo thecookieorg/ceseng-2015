@@ -82,6 +82,15 @@ Rails.application.routes.draw do
     get 'services/sustainability_management'
     get 'services/total_building_commissioning'
     get 'services/leed_commissioning'
+    get 'services/existing_building_commissioning'
+    get 'services/testing_and_balancing'
+    get 'services/system_manuals'
+    get 'services/heat_and_power_plant'
+    get 'services/laboratory_high_containment_facilities'
+    get 'services/high_voltage_substations'
+    get 'services/decon_chambers'
+    get 'services/retrofit_m_and_v_option_b'
+    get 'services/whole_building_option_c'
 
 
   end  
@@ -97,16 +106,6 @@ Rails.application.routes.draw do
   
   
   
-  
-  get 'services/existing_building_commissioning'
-  get 'services/testing_and_balancing'
-  get 'services/system_manuals'
-  get 'services/heat_and_power_plant'
-  get 'services/laboratory_high_containment_facilities'
-  get 'services/high_voltage_substations'
-  get 'services/decon_chambers'
-  get 'services/retrofit_m_and_v_option_b'
-  get 'services/whole_building_option_c'
   get 'services/whole_building'
   get 'services/incentive_management'
   get 'services/energy_studies'
