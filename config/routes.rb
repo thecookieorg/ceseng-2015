@@ -93,6 +93,19 @@ Rails.application.routes.draw do
     get 'services/whole_building_option_c'
     get 'services/whole_building'
     get 'services/incentive_management'
+    get 'services/energy_studies'
+    get 'services/building_energy_simulation'
+    get 'services/inverse_modeling'
+    get 'services/real_vs_estimated_energy'
+    get 'services/continuous_optimization_inner'
+    get 'services/monitoring_based_commissioning'
+    get 'services/retrofit_design'
+    get 'services/new_constriction_design'
+    get 'services/design_build_projects'
+    get 'services/boma_best_certification'
+    get 'services/leed_certification'
+    get 'services/behavior_changes'
+
 
 
   end  
@@ -102,22 +115,6 @@ Rails.application.routes.draw do
   devise_for :users
   resources :posts
 
-  
-  
-
-  get 'services/energy_studies'
-  get 'services/building_energy_simulation'
-  get 'services/inverse_modeling'
-  get 'services/real_vs_estimated_energy'
-  get 'services/continuous_optimization_inner'
-  get 'services/monitoring_based_commissioning'
-  get 'services/retrofit_design'
-  get 'services/new_constriction_design'
-  get 'services/design_build_projects'
-  get 'services/boma_best_certification'
-  get 'services/leed_certification'
-  get 'services/policies_management'
-  get 'services/behavior_changes'
 
 
   # get 'about/people'
