@@ -91,6 +91,8 @@ Rails.application.routes.draw do
     get 'services/decon_chambers'
     get 'services/retrofit_m_and_v_option_b'
     get 'services/whole_building_option_c'
+    get 'services/whole_building'
+    get 'services/incentive_management'
 
 
   end  
@@ -102,12 +104,7 @@ Rails.application.routes.draw do
 
   
   
-  
-  
-  
-  
-  get 'services/whole_building'
-  get 'services/incentive_management'
+
   get 'services/energy_studies'
   get 'services/building_energy_simulation'
   get 'services/inverse_modeling'
