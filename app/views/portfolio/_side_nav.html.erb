@@ -9,7 +9,7 @@
       </h4>
     </div>
 
-    <% if current_page?('/portfolio/total_building_commissioning') || current_page?('/portfolio/vancouver_international_airport') || current_page?('/portfolio/st_mary_hospital_expansion') || current_page?('/portfolio/woodward_hill_elementary_school') || current_page?('/portfolio/national_research_centre') %>
+    <% if current_page?('/en/portfolio/total_building_commissioning') || current_page?('/en/portfolio/vancouver_international_airport') || current_page?('/en/portfolio/st_mary_hospital_expansion') || current_page?('/en/portfolio/woodward_hill_elementary_school') || current_page?('/en/portfolio/national_research_centre') %>
       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
     <% else %>
       <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
@@ -17,25 +17,25 @@
 
       <div class="panel-body">
         <ul class="side-nav-ces">
-          <% if current_page?('/portfolio/vancouver_international_airport') %>
+          <% if current_page?('/en/portfolio/vancouver_international_airport') %>
             <li class="active"><%= link_to 'Vancouver International Airport', portfolio_vancouver_international_airport_path %></li>
           <% else %>
             <li><%= link_to 'Vancouver International Airport', portfolio_vancouver_international_airport_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/st_mary_hospital_expansion') %>
+          <% if current_page?('/en/portfolio/st_mary_hospital_expansion') %>
             <li class="active"><%= link_to 'St Mary Hospital Expansion Building', portfolio_st_mary_hospital_expansion_path %></li>
           <% else %>
             <li><%= link_to 'St Mary Hospital Expansion Building', portfolio_st_mary_hospital_expansion_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/woodward_hill_elementary_school') %>
+          <% if current_page?('/en/portfolio/woodward_hill_elementary_school') %>
             <li class="active"><%= link_to 'Woodward Hill Elementary School', portfolio_woodward_hill_elementary_school_path %></li>
           <% else %>
             <li><%= link_to 'Woodward Hill Elementary School', portfolio_woodward_hill_elementary_school_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/national_research_centre') %>
+          <% if current_page?('/en/portfolio/national_research_centre') %>
             <li class="active"><%= link_to 'National Research Centre', portfolio_national_research_centre_path %></li>
           <% else %>
             <li><%= link_to 'National Research Centre', portfolio_national_research_centre_path %></li>
@@ -54,7 +54,7 @@
       </h4>
     </div>
 
-    <% if current_page?('/portfolio/leed_commissioning') || current_page?('/portfolio/ubc_life_sciences_center') || current_page?('/portfolio/electronic_arts_studio') || current_page?('/portfolio/bc_hydro_office_towers') || current_page?('/portfolio/district_educational_centre') || current_page?('/portfolio/living_shangri_la') || current_page?('/portfolio/telus_centre') %>
+    <% if current_page?('/en/portfolio/leed_commissioning') || current_page?('/en/portfolio/ubc_life_sciences_center') || current_page?('/en/portfolio/electronic_arts_studio') || current_page?('/en/portfolio/bc_hydro_office_towers') || current_page?('/en/portfolio/district_educational_centre') || current_page?('/en/portfolio/living_shangri_la') || current_page?('/en/portfolio/telus_centre') %>
         <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
     <% else %>
         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -62,37 +62,37 @@
       <div class="panel-body">
         <ul class="side-nav-ces">
 
-          <% if current_page?('/portfolio/ubc_life_sciences_center') %>
+          <% if current_page?('/en/portfolio/ubc_life_sciences_center') %>
             <li class="active"><%= link_to 'University of British Columbia', portfolio_ubc_life_sciences_center_path %></li>
           <% else %>
             <li><%= link_to 'University of British Columbia', portfolio_ubc_life_sciences_center_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/electronic_arts_studio') %>
+          <% if current_page?('/en/portfolio/electronic_arts_studio') %>
             <li class="active"><%= link_to 'Electronic Arts Studio', portfolio_electronic_arts_studio_path %></li>
           <% else %>
             <li><%= link_to 'Electronic Arts Studio', portfolio_electronic_arts_studio_path %></li>
           <% end %>
 
-        	<% if current_page?('/portfolio/bc_hydro_office_towers') %>
+        	<% if current_page?('/en/portfolio/bc_hydro_office_towers') %>
             <li class="active"><%= link_to 'BC Hydro Office Towers Renovations', portfolio_bc_hydro_office_towers_path %></li>
           <% else %>
             <li><%= link_to 'BC Hydro Office Towers Renovations', portfolio_bc_hydro_office_towers_path %></li>
           <% end %>
         	
-          <% if current_page?('/portfolio/district_educational_centre') %>
+          <% if current_page?('/en/portfolio/district_educational_centre') %>
             <li class="active"><%= link_to 'District Educational Centre', portfolio_district_educational_centre_path %></li>
           <% else %>
             <li><%= link_to 'District Educational Centre', portfolio_district_educational_centre_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/living_shangri_la') %>
+          <% if current_page?('/en/portfolio/living_shangri_la') %>
             <li class="active"><%= link_to 'Living Shangri-La', portfolio_living_shangri_la_path %></li>
           <% else %>
             <li><%= link_to 'Living Shangri-La', portfolio_living_shangri_la_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/telus_centre') %>
+          <% if current_page?('/en/portfolio/telus_centre') %>
             <li class="active"><%= link_to 'Telus Centre', portfolio_telus_centre_path %></li>
           <% else %>
             <li><%= link_to 'Telus Centre', portfolio_telus_centre_path %></li>
@@ -112,7 +112,7 @@
       </h4>
     </div>
     
-    <% if current_page?('/portfolio/existing_building_commissioning') || current_page?('/portfolio/bc_cancer_research_centre') || current_page?('/portfolio/st_mary_hospital_existing_building') || current_page?('/portfolio/unbc') || current_page?('/portfolio/south_peace_community_multiplex') %>
+    <% if current_page?('/en/portfolio/existing_building_commissioning') || current_page?('/en/portfolio/bc_cancer_research_centre') || current_page?('/en/portfolio/st_mary_hospital_existing_building') || current_page?('/en/portfolio/unbc') || current_page?('/en/portfolio/south_peace_community_multiplex') %>
       <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingthree">
     <% else %>
       <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingthree">
@@ -121,25 +121,25 @@
       <div class="panel-body">
         <ul class="side-nav-ces">
 
-          <% if current_page?('/portfolio/bc_cancer_research_centre') %>
+          <% if current_page?('/en/portfolio/bc_cancer_research_centre') %>
             <li class="active"><%= link_to 'British Columbia Cancer Research Centre', portfolio_bc_cancer_research_centre_path %></li>
           <% else %>
             <li><%= link_to 'British Columbia Cancer Research Centre', portfolio_bc_cancer_research_centre_path %></li>
           <% end %>
         	
-          <% if current_page?('/portfolio/st_mary_hospital_existing_building') %>
+          <% if current_page?('/en/portfolio/st_mary_hospital_existing_building') %>
             <li class="active"><%= link_to 'St. Mary\'s Hospital Existing Building', portfolio_st_mary_hospital_existing_building_path %></li>
           <% else %>
             <li><%= link_to 'St. Mary\'s Hospital Existing Building', portfolio_st_mary_hospital_existing_building_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/unbc') %>
+          <% if current_page?('/en/portfolio/unbc') %>
             <li class="active"><%= link_to 'University of Northern British Columbia', portfolio_unbc_path %></li>
           <% else %>
             <li><%= link_to 'University of Northern British Columbia', portfolio_unbc_path %></li>
           <% end %>
         	
-          <% if current_page?('/portfolio/south_peace_community_multiplex') %>
+          <% if current_page?('/en/portfolio/south_peace_community_multiplex') %>
             <li class="active"><%= link_to 'South Peace Community Multiplex', portfolio_south_peace_community_multiplex_path %></li>
           <% else %>
             <li><%= link_to 'South Peace Community Multiplex', portfolio_south_peace_community_multiplex_path %></li>
@@ -159,7 +159,7 @@
       </h4>
     </div>
 
-    <% if current_page?('/portfolio/industrial_commissioning') || current_page?('/portfolio/bioenergy_gasification_heating_plant') || current_page?('/portfolio/biomass_fueled_combined_heat_and_power') || current_page?('/portfolio/continuous_effluent_decontamination') || current_page?('/portfolio/decontamination_chamber') %>
+    <% if current_page?('/en/portfolio/industrial_commissioning') || current_page?('/en/portfolio/bioenergy_gasification_heating_plant') || current_page?('/en/portfolio/biomass_fueled_combined_heat_and_power') || current_page?('/en/portfolio/continuous_effluent_decontamination') || current_page?('/en/portfolio/decontamination_chamber') %>
       <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
     <% else %>
       <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
@@ -168,25 +168,25 @@
       <div class="panel-body">
         <ul class="side-nav-ces">
 
-          <% if current_page?('/portfolio/bioenergy_gasification_heating_plant') %>
+          <% if current_page?('/en/portfolio/bioenergy_gasification_heating_plant') %>
             <li class="active"><%= link_to 'Bioenergy Gasification Heating Plant', portfolio_bioenergy_gasification_heating_plant_path %></li>
           <% else %>
             <li><%= link_to 'Bioenergy Gasification Heating Plant', portfolio_bioenergy_gasification_heating_plant_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/biomass_fueled_combined_heat_and_power') %>
+          <% if current_page?('/en/portfolio/biomass_fueled_combined_heat_and_power') %>
             <li class="active"><%= link_to 'Biomass Fueled Combined Heat and Power Plant', portfolio_biomass_fueled_combined_heat_and_power_path %></li>
           <% else %>
             <li><%= link_to 'Biomass Fueled Combined Heat and Power Plant', portfolio_biomass_fueled_combined_heat_and_power_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/continuous_effluent_decontamination') %>
+          <% if current_page?('/en/portfolio/continuous_effluent_decontamination') %>
             <li class="active"><%= link_to 'Continuous Effluent Decontamination', portfolio_continuous_effluent_decontamination_path %></li>
           <% else %>
             <li><%= link_to 'Continuous Effluent Decontamination', portfolio_continuous_effluent_decontamination_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/decontamination_chamber') %>
+          <% if current_page?('/en/portfolio/decontamination_chamber') %>
             <li class="active"><%= link_to 'Decontamination Chamber', portfolio_decontamination_chamber_path %></li>
           <% else %>
             <li><%= link_to 'Decontamination Chamber', portfolio_decontamination_chamber_path %></li>
@@ -205,7 +205,7 @@
       </h4>
     </div>
 
-    <% if current_page?('/portfolio/laboratory_containment_facility') || current_page?('/portfolio/ubc_life_sciences_center_laboratory') || current_page?('/portfolio/sfu_blusson_hall_laboratory') || current_page?('/portfolio/bc_cancer_research_lcontainment') || current_page?('/portfolio/bc_center_for_disease_control') %>
+    <% if current_page?('/en/portfolio/laboratory_containment_facility') || current_page?('/en/portfolio/ubc_life_sciences_center_laboratory') || current_page?('/en/portfolio/sfu_blusson_hall_laboratory') || current_page?('/en/portfolio/bc_cancer_research_lcontainment') || current_page?('/en/portfolio/bc_center_for_disease_control') %>
       <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
     <% else %>
       <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
@@ -214,25 +214,25 @@
       <div class="panel-body">
         <ul class="side-nav-ces">
 
-          <% if current_page?('/portfolio/ubc_life_sciences_center_laboratory') %>
+          <% if current_page?('/en/portfolio/ubc_life_sciences_center_laboratory') %>
             <li class="active"><%= link_to 'University of British Columbia', portfolio_ubc_life_sciences_center_laboratory_path %></li>
           <% else %>
             <li><%= link_to 'University of British Columbia', portfolio_ubc_life_sciences_center_laboratory_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/sfu_blusson_hall_laboratory') %>
+          <% if current_page?('/en/portfolio/sfu_blusson_hall_laboratory') %>
             <li class="active"><%= link_to 'Simon Fraser University', portfolio_sfu_blusson_hall_laboratory_path %></li>
           <% else %>
             <li><%= link_to 'Simon Fraser University', portfolio_sfu_blusson_hall_laboratory_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/bc_cancer_research_lcontainment') %>
+          <% if current_page?('/en/portfolio/bc_cancer_research_lcontainment') %>
             <li class="active"><%= link_to 'BC Cancer Research Centre', portfolio_bc_cancer_research_lcontainment_path %></li>
           <% else %>
             <li><%= link_to 'BC Cancer Research Centre', portfolio_bc_cancer_research_lcontainment_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/bc_center_for_disease_control') %>
+          <% if current_page?('/en/portfolio/bc_center_for_disease_control') %>
             <li class="active"><%= link_to 'BC Center for Disease Control', portfolio_bc_center_for_disease_control_path %></li>
           <% else %>
             <li><%= link_to 'BC Center for Disease Control', portfolio_bc_center_for_disease_control_path %></li>
@@ -252,7 +252,7 @@
       </h4>
     </div>
 
-    <% if current_page?('/portfolio/measurement_and_verification') || current_page?('/portfolio/centre_of_excellence_for_clean_energy') || current_page?('/portfolio/st_mary_hospital_expansion_2') || current_page?('/portfolio/abbotsford_collegiate_school') || current_page?('/portfolio/carson_graham_secondary_school') %>
+    <% if current_page?('/en/portfolio/measurement_and_verification') || current_page?('/en/portfolio/centre_of_excellence_for_clean_energy') || current_page?('/en/portfolio/st_mary_hospital_expansion_2') || current_page?('/en/portfolio/abbotsford_collegiate_school') || current_page?('/en/portfolio/carson_graham_secondary_school') %>
       <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
     <% else %>
       <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
@@ -261,25 +261,25 @@
       <div class="panel-body">
         <ul class="side-nav-ces">
 
-          <% if current_page?('/portfolio/centre_of_excellence_for_clean_energy') %>
+          <% if current_page?('/en/portfolio/centre_of_excellence_for_clean_energy') %>
             <li class="active"><%= link_to 'Centre of Excellence for Clean Energy Technology', portfolio_centre_of_excellence_for_clean_energy_path %></li>
           <% else %>
             <li><%= link_to 'Centre of Excellence for Clean Energy Technology', portfolio_centre_of_excellence_for_clean_energy_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/st_mary_hospital_expansion_2') %>
+          <% if current_page?('/en/portfolio/st_mary_hospital_expansion_2') %>
             <li class="active"><%= link_to 'St. Mary Hospital Expansion', portfolio_st_mary_hospital_expansion_2_path %></li>
           <% else %>
             <li><%= link_to 'St. Mary Hospital Expansion', portfolio_st_mary_hospital_expansion_2_path %></li>
           <% end %>
 
-        	<% if current_page?('/portfolio/abbotsford_collegiate_school') %>
+        	<% if current_page?('/en/portfolio/abbotsford_collegiate_school') %>
             <li class="active"><%= link_to 'Abbotsford Collegiate School', portfolio_abbotsford_collegiate_school_path %></li>
           <% else %>
             <li><%= link_to 'Abbotsford Collegiate School', portfolio_abbotsford_collegiate_school_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/carson_graham_secondary_school') %>
+          <% if current_page?('/en/portfolio/carson_graham_secondary_school') %>
             <li class="active"><%= link_to 'Carson Graham Secondary School', portfolio_carson_graham_secondary_school_path %></li>
           <% else %>
             <li><%= link_to 'Carson Graham Secondary School', portfolio_carson_graham_secondary_school_path %></li>
@@ -299,7 +299,7 @@
       </h4>
     </div>
     
-    <% if current_page?('/portfolio/energy_analysis') || current_page?('/portfolio/st_mary_hospital_existing_building_2') || current_page?('/portfolio/hot_water_boiler_plant_optimization') || current_page?('/portfolio/bc_cancer_research_centre_2') || current_page?('/portfolio/richmond_lexus_dealership') || current_page?('/portfolio/tsawwassen_spring_apartment_building') || current_page?('/portfolio/west_pender_social_housing') %>
+    <% if current_page?('/en/portfolio/energy_analysis') || current_page?('/en/portfolio/st_mary_hospital_existing_building_2') || current_page?('/en/portfolio/hot_water_boiler_plant_optimization') || current_page?('/en/portfolio/bc_cancer_research_centre_2') || current_page?('/en/portfolio/richmond_lexus_dealership') || current_page?('/en/portfolio/tsawwassen_spring_apartment_building') || current_page?('/en/portfolio/west_pender_social_housing') %>
       <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSeven">
     <% else %>
       <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
@@ -307,37 +307,37 @@
       <div class="panel-body">
         <ul class="side-nav-ces">
         	
-          <% if current_page?('/portfolio/st_mary_hospital_existing_building_2') %>
+          <% if current_page?('/en/portfolio/st_mary_hospital_existing_building_2') %>
             <li class="active"><%= link_to 'St Mary Hospital Existing Building', portfolio_st_mary_hospital_existing_building_2_path %></li>
           <% else %>
             <li><%= link_to 'St Mary Hospital Existing Building', portfolio_st_mary_hospital_existing_building_2_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/hot_water_boiler_plant_optimization') %>
+          <% if current_page?('/en/portfolio/hot_water_boiler_plant_optimization') %>
             <li class="active"><%= link_to 'Hot Water Boiler Plant Optimization', portfolio_hot_water_boiler_plant_optimization_path %></li>
           <% else %>
             <li><%= link_to 'Hot Water Boiler Plant Optimization', portfolio_hot_water_boiler_plant_optimization_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/bc_cancer_research_centre_2') %>
+          <% if current_page?('/en/portfolio/bc_cancer_research_centre_2') %>
             <li class="active"><%= link_to 'BC Cancer Research Centre', portfolio_bc_cancer_research_centre_2_path %></li>
           <% else %>
             <li><%= link_to 'BC Cancer Research Centre', portfolio_bc_cancer_research_centre_2_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/richmond_lexus_dealership') %>
+          <% if current_page?('/en/portfolio/richmond_lexus_dealership') %>
             <li class="active"><%= link_to 'Richmond Lexus Dealership', portfolio_richmond_lexus_dealership_path %></li>
           <% else %>
             <li><%= link_to 'Richmond Lexus Dealership', portfolio_richmond_lexus_dealership_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/tsawwassen_spring_apartment_building') %>
+          <% if current_page?('/en/portfolio/tsawwassen_spring_apartment_building') %>
             <li class="active"><%= link_to 'Tsawwassen Spring Apartment Building Complex', portfolio_tsawwassen_spring_apartment_building_path %></li>
           <% else %>
             <li><%= link_to 'Tsawwassen Spring Apartment Building Complex', portfolio_tsawwassen_spring_apartment_building_path %></li>
           <% end %>
 
-          <% if current_page?('/portfolio/west_pender_social_housing') %>
+          <% if current_page?('/en/portfolio/west_pender_social_housing') %>
             <li class="active"><%= link_to '337 West Pender Social Housing Residential Tower', portfolio_west_pender_social_housing_path %></li>
           <% else %>
             <li><%= link_to '337 West Pender Social Housing Residential Tower', portfolio_west_pender_social_housing_path %></li>
