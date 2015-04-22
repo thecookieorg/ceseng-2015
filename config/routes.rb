@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+
   resources :ces_news
 
   devise_for :users
