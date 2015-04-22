@@ -1,1 +1,301 @@
-_side_nav.fr.html.erb
+<h3 style="color: #928F90;">Services</h3>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="no-text-decoration">
+          Building Commissioning
+        </a>
+      </h4>
+    </div>
+
+    <% if current_page?('/fr/services/building_commissioning') || current_page?('/fr/services/total_building_commissioning') || current_page?('/fr/services/leed_commissioning') || current_page?('/fr/services/existing_building_commissioning') || current_page?('/fr/services/testing_and_balancing') || current_page?('/fr/services/system_manuals') %>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+    <% else %>
+      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <% end %>
+
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+          <% if current_page?('/fr/services/total_building_commissioning') %>
+        	 <li class="active"><%= link_to 'Total Building Commissioning', services_total_building_commissioning_path %></li>
+          <% else %>
+            <li><%= link_to 'Total Building Commissioning', services_total_building_commissioning_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/leed_commissioning') %>
+            <li class="active"><%= link_to 'LEED Commissioning', services_leed_commissioning_path %></li>
+        	<% else %>
+            <li><%= link_to 'LEED Commissioning', services_leed_commissioning_path %></li>
+          <% end %>
+
+          <% if current_page?('/fr/services/existing_building_commissioning') %>
+            <li class="active"><%= link_to 'Existing Building Commissioning', services_existing_building_commissioning_path %></li>
+          <% else %>
+            <li><%= link_to 'Existing Building Commissioning', services_existing_building_commissioning_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/testing_and_balancing') %>
+            <li class="active"><%= link_to 'Testing and Balancing', services_testing_and_balancing_path %></li>
+          <% else %>
+            <li><%= link_to 'Testing and Balancing', services_testing_and_balancing_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/system_manuals') %>
+            <li class="active"><%= link_to 'System Manuals', services_system_manuals_path %></li>
+          <% else %>
+            <li><%= link_to 'System Manuals', services_system_manuals_path %></li>
+          <% end %>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Industrial Commissioning
+        </a>
+      </h4>
+    </div>
+    <% if current_page?('/fr/services/industrial_commissioning') || current_page?('/fr/services/heat_and_power_plant') || current_page?('/fr/services/laboratory_high_containment_facilities') || current_page?('/fr/services/high_voltage_substations') || current_page?('/fr/services/decon_chambers') %>
+      <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+    <% else %>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+    <% end %>
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+          <% if current_page?('/fr/services/heat_and_power_plant') %>
+        	 <li class="active"><%= link_to 'Heat and Power Plant (UBC and UNBC)', services_heat_and_power_plant_path %></li>
+          <% else %>
+            <li><%= link_to 'Heat and Power Plant (UBC and UNBC)', services_heat_and_power_plant_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/laboratory_high_containment_facilities') %>
+            <li class="active"><%= link_to 'Laboratory High Containment Facilities', services_laboratory_high_containment_facilities_path %></li>
+          <% else %>
+            <li><%= link_to 'Laboratory High Containment Facilities', services_laboratory_high_containment_facilities_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/high_voltage_substations') %>
+            <li class="active"><%= link_to 'High Voltage Substations', services_high_voltage_substations_path %></li>
+          <% else %>
+            <li><%= link_to 'High Voltage Substations', services_high_voltage_substations_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/decon_chambers') %>
+            <li class="active"><%= link_to 'Decon Chambers', services_decon_chambers_path %></li>
+          <% else %>
+            <li><%= link_to 'Decon Chambers', services_decon_chambers_path %></li>
+          <% end %>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Measurement and Verification
+        </a>
+      </h4>
+    </div>
+
+    <% if current_page?('/fr/services/measurement_and_verification') || current_page?('/fr/services/retrofit_m_and_v_option_b') || current_page?('/fr/services/whole_building_option_c') || current_page?('/fr/services/whole_building') %>
+      <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+    <% else %>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+    <% end %>
+
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+
+          <% if current_page?('/fr/services/retrofit_m_and_v_option_b') %>
+        	 <li class="active"><%= link_to 'Retrofit M&V - IPMVP Option B', services_retrofit_m_and_v_option_b_path %></li>
+          <% else %>
+            <li><%= link_to 'Retrofit M&V - IPMVP Option B', services_retrofit_m_and_v_option_b_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/whole_building_option_c') %>
+            <li class="active"><%= link_to 'Whole Building - IPMVP Option C', services_whole_building_option_c_path %></li>
+          <% else %>
+            <li><%= link_to 'Whole Building - IPMVP Option C', services_whole_building_option_c_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/whole_building') %>
+            <li class="active"><%= link_to 'Whole Building Simulated Calibration - Option D', services_whole_building_path %></li>
+          <% else %>
+            <li><%= link_to 'Whole Building Simulated Calibration - Option D', services_whole_building_path %></li>
+          <% end %>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Energy Performance
+        </a>
+      </h4>
+    </div>
+
+    <% if current_page?('/fr/services/energy_performance') || current_page?('/fr/services/incentive_management') || current_page?('/fr/services/energy_studies') || current_page?('/fr/services/building_energy_simulation') || current_page?('/fr/services/inverse_modeling') || current_page?('/fr/services/real_vs_estimated_energy') %>
+      <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+    <% else %>
+      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+    <% end %>
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+
+          <% if current_page?('/fr/services/incentive_management') %>
+        	 <li class="active"><%= link_to 'Incentive Management', services_incentive_management_path %></li>
+          <% else %>
+            <li><%= link_to 'Incentive Management', services_incentive_management_path %></li>
+          <% end %>
+
+        	<% if current_page?('/fr/services/energy_studies') %>
+            <li class="active"><%= link_to 'Energy Studies', services_energy_studies_path %></li>
+          <% else %>
+            <li><%= link_to 'Energy Studies', services_energy_studies_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/building_energy_simulation') %>
+            <li class="active"><%= link_to 'Building Energy Simulation', services_building_energy_simulation_path %></li>
+          <% else %>
+            <li><%= link_to 'Building Energy Simulation', services_building_energy_simulation_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/inverse_modeling') %>
+            <li class="active"><%= link_to 'Inverse Modelling and Performance Benchmarking', services_inverse_modeling_path %></li>
+          <% else %>
+            <li><%= link_to 'Inverse Modelling and Performance Benchmarking', services_inverse_modeling_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/real_vs_estimated_energy') %>
+            <li class="active"><%= link_to 'Real versus Estimated Energy Consumption', services_real_vs_estimated_energy_path %></li>
+          <% else %>
+            <li><%= link_to 'Real versus Estimated Energy Consumption', services_real_vs_estimated_energy_path %></li>
+          <% end %>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Continuous Optimization
+        </a>
+      </h4>
+    </div>
+
+    <% if current_page?('/fr/services/continuous_optimization') || current_page?('/fr/services/continuous_optimization_inner') || current_page?('/fr/services/monitoring_based_commissioning') %>
+      <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
+    <% else %>
+      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+    <% end %>
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+          <% if current_page?('/fr/services/continuous_optimization_inner') %>
+            <li class="active"><%= link_to 'Continuous Optimization', services_continuous_optimization_inner_path %></li>
+          <% else %>
+            <li><%= link_to 'Continuous Optimization', services_continuous_optimization_inner_path %></li>
+          <% end %>
+
+          <% if current_page?('/fr/services/monitoring_based_commissioning') %>
+            <li class="active"><%= link_to 'Monitoring Based Commissioning', services_monitoring_based_commissioning_path %></li>
+          <% else %>
+            <li><%= link_to 'Monitoring Based Commissioning', services_monitoring_based_commissioning_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingSix">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          MEP Design Services
+        </a>
+      </h4>
+    </div>
+
+    <% if current_page?('/fr/services/mep_design_services') || current_page?('/fr/services/retrofit_design') || current_page?('/fr/services/new_constriction_design') || current_page?('/fr/services/design_build_projects') %>
+      <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
+    <% else %>
+      <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+    <% end %>
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+          
+          <% if current_page?('/fr/services/retrofit_design') %>
+            <li class="active"><%= link_to 'Retrofit Design', services_retrofit_design_path %></li>
+          <% else %>
+            <li><%= link_to 'Retrofit Design', services_retrofit_design_path %></li>
+          <% end %>
+
+          <% if current_page?('/fr/services/new_constriction_design') %>
+            <li class="active"><%= link_to 'New Construction Design', services_new_constriction_design_path %></li>
+          <% else %>
+            <li><%= link_to 'New Construction Design', services_new_constriction_design_path %></li>
+          <% end %>
+
+        	<% if current_page?('/fr/services/design_build_projects') %>
+            <li class="active"><%= link_to 'Design Build Projects', services_design_build_projects_path %></li>
+          <% else %>
+            <li><%= link_to 'Design Build Projects', services_design_build_projects_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-ces">
+    <div class="panel-heading" role="tab" id="headingSeven">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Sustainability Management
+        </a>
+      </h4>
+    </div>
+
+    <% if current_page?('/fr/services/sustainability_management') || current_page?('/fr/services/boma_best_certification') || current_page?('/fr/services/leed_certification') || current_page?('/services/policies_management') || current_page?('/fr/services/behavior_changes') %>
+      <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSeven">
+    <% else %>
+      <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+    <% end %>
+      <div class="panel-body">
+        <ul class="side-nav-ces">
+
+          <% if current_page?('/fr/services/boma_best_certification') %>
+            <li class="active"><%= link_to 'BOMA BESt Certification', services_boma_best_certification_path %></li>
+          <% else %>
+            <li><%= link_to 'BOMA BESt Certification', services_boma_best_certification_path %></li>
+          <% end %>
+
+          <% if current_page?('/fr/services/leed_certification') %>
+            <li class="active"><%= link_to 'LEED Certification', services_leed_certification_path %></li>
+          <% else %>
+            <li><%= link_to 'LEED Certification', services_leed_certification_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/policies_management') %>
+            <li class="active"><%= link_to 'Policies Management', services_policies_management_path %></li>
+          <% else %>
+            <li><%= link_to 'Policies Management', services_policies_management_path %></li>
+          <% end %>
+        	
+          <% if current_page?('/fr/services/behavior_changes') %>
+            <li class="active"><%= link_to 'Behavior Changes', services_behavior_changes_path %></li>
+          <% else %>
+            <li><%= link_to 'Behavior Changes', services_behavior_changes_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
