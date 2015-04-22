@@ -105,6 +105,7 @@ Rails.application.routes.draw do
     get 'services/boma_best_certification'
     get 'services/leed_certification'
     get 'services/behavior_changes'
+    get 'services/policies_management'
 
 
 
