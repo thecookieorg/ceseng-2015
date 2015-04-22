@@ -72,6 +72,18 @@ Rails.application.routes.draw do
     get 'portfolio/west_pender_social_housing'
 
 
+
+    get 'services/building_commissioning'
+    get 'services/industrial_commissioning'
+    get 'services/measurement_and_verification'
+    get 'services/energy_performance'
+    get 'services/continuous_optimization'
+    get 'services/mep_design_services'
+    get 'services/sustainability_management'
+    get 'services/total_building_commissioning'
+    get 'services/leed_commissioning'
+
+
   end  
 
   resources :ces_news
@@ -79,17 +91,13 @@ Rails.application.routes.draw do
   devise_for :users
   resources :posts
 
-
-
-  get 'services/building_commissioning'
-  get 'services/industrial_commissioning'
-  get 'services/measurement_and_verification'
-  get 'services/energy_performance'
-  get 'services/continuous_optimization'
-  get 'services/mep_design_services'
-  get 'services/sustainability_management'
-  get 'services/total_building_commissioning'
-  get 'services/leed_commissioning'
+  
+  
+  
+  
+  
+  
+  
   get 'services/existing_building_commissioning'
   get 'services/testing_and_balancing'
   get 'services/system_manuals'
