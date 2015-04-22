@@ -3,8 +3,36 @@ Rails.application.routes.draw do
   scope "(:locale)", :locale => /en|fr/ do
     root :to => 'home#index'
     get "home/index"
+    
     get 'about/about_ces'
+    get 'about/testimonials'
+    get 'about/the_ces_difference'
+    get 'about/boban_ratkovich'
+    get 'about/risto_basic'
+    get 'about/slobodan_vukadinov'
+    get 'about/brett_crawford'
+    get 'about/kyle_bigourdin'
+    get 'about/steven_quan'
+    get 'about/bojan_ivankovic'
+    get 'about/homayoun_khatami'
+    get 'about/daniel_alfonso_ponte'
+    get 'about/johnson_shen'
+    get 'about/robin_donovan'
+    get 'about/marko_manojlovic'
+    get 'about/aleksandar_visnjic'
+    get 'about/laurence_kao'
+    get 'about/drasko_rapaic'
+    get 'about/roy_xu'
+    get 'about/mitchell_leckner'
+    get 'about/gilles_provencher'
+    get 'about/ali_safi'
+    
     get 'contact/index'
+    
+    get 'ecoopera/index'
+    
+    get 'portfolio/abbotsford_collegiate_school'
+
   end  
 
   resources :ces_news
@@ -14,7 +42,7 @@ Rails.application.routes.draw do
 
   
 
-  get 'ecoopera/index'
+  
 
   get 'portfolio/total_building_commissioning'
   get 'portfolio/leed_commissioning'
@@ -49,7 +77,6 @@ Rails.application.routes.draw do
   get 'portfolio/centre_of_excellence_for_clean_energy'
   get 'portfolio/st_mary_hospital_expansion'
   get 'portfolio/st_mary_hospital_expansion_2'
-  get 'portfolio/abbotsford_collegiate_school'
   get 'portfolio/carson_graham_secondary_school'
   get 'portfolio/hot_water_boiler_plant_optimization'
   get 'portfolio/richmond_lexus_dealership'
@@ -92,84 +119,8 @@ Rails.application.routes.draw do
   get 'services/behavior_changes'
 
 
-  get 'about/the_ces_difference'
-  get 'about/people'
-  get 'about/testimonials'
-  get 'about/boban_ratkovich'
-  get 'about/risto_basic'
-  get 'about/slobodan_vukadinov'
-  get 'about/brett_crawford'
-  get 'about/kyle_bigourdin'
-  get 'about/steven_quan'
-  get 'about/bojan_ivankovic'
-  get 'about/homayoun_khatami'
-  get 'about/daniel_alfonso_ponte'
-  get 'about/johnson_shen'
-  get 'about/robin_donovan'
-  get 'about/marko_manojlovic'
-  get 'about/aleksandar_visnjic'
-  get 'about/laurence_kao'
-  get 'about/drasko_rapaic'
-  get 'about/roy_xu'
-  get 'about/mitchell_leckner'
-  get 'about/gilles_provencher'
-  get 'about/ali_safi'
+  # get 'about/people'
+  
 
 
-  # root 'home#index'
-
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
-
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
 end
